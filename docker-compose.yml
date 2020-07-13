@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  tkt-client:
+    build:
+      context: ./tkt-client
+      dockerfile: client-dev.Dockerfile
+    stdin_open: true
+    restart: always
+    volumes:
+      - /app/node_modules
+      - ./tkt-client:/app
+  tkt-proxy:
+    build:
+      context: ./tkt-proxy
+      dockerfile: proxy-dev.Dockerfile
+    restart: always
+    ports:
+      - "8080:80"
