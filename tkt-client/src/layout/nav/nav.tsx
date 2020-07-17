@@ -1,5 +1,7 @@
 import React, { ReactElement } from "react";
 
-export default (): ReactElement => {
+const Nav = (): ReactElement => {
   return <nav></nav>;
 };
+
+export default Nav;

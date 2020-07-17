@@ -1,0 +1,22 @@
+@import "./vars";
+
+.container {
+  width: 98%;
+  margin: auto;
+
+  @include breakpoint-tablet-vertical {
+    width: 88%;
+  }
+
+  @include breakpoint-tablet-horizontal {
+    width: 78%;
+  }
+
+  @include breakpoint-desktop {
+    width: 68%;
+  }
+
+  @include breakpoint-desktop-large {
+    width: 58%;
+  }
+}

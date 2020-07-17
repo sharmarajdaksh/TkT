@@ -1,0 +1,43 @@
+/* 
+*
+* Colors
+*
+*/
+
+$theme-color-blue-5: #03045e;
+$theme-color-blue-4: #0077b6;
+$theme-color-blue-3: #00b4d8;
+$theme-color-blue-2: #90e0ef;
+$theme-color-blue-1: #caf0f8;
+
+/*
+*
+* Breakpoints
+*
+*/
+
+@mixin breakpoint-phone {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin breakpoint-tablet-vertical {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+@mixin breakpoint-tablet-horizontal {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+@mixin breakpoint-desktop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin breakpoint-desktop-large {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
