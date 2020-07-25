@@ -1,5 +1,9 @@
 import React from "react";
-import Nav from "../nav/nav";
+
+import Header from "../Header/Header";
+import Nav from "../Nav/Nav";
+
+import skeletonStyles from "./Skeleton.module.scss";
 
 interface Props {
   children?: React.ReactNode;
@@ -7,10 +11,11 @@ interface Props {
 
 const Skeleton = (props: Props): React.ReactElement => {
   return (
-    <div>
+    <main className={skeletonStyles.skeleton_shell}>
+      <Header />
       <Nav />
       {props.children}
-    </div>
+    </main>
   );
 };
 

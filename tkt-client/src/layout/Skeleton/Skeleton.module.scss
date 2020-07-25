@@ -1,0 +1,8 @@
+@import "../../styles/base";
+
+$border-width: 2px;
+
+.skeleton_shell {
+  border-right: $border-width $theme-color-white-4 solid;
+  border-left: $border-width $theme-color-white-4 solid;
+}
